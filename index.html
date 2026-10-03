@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JOTIN HUB - ช่องยูทูปเกมเมอร์</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0a1f; --panel:#181334; --line:#33297a; --text:#ece9ff; --muted:#a9a3d6;
+  --violet:#8b5cf6; --blue:#3b82f6; --hot:#ff3d5a;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0d0a1f;--panel:#181334;--line:#33297a;--text:#ece9ff;--muted:#a9a3d6}
+}
+:root[data-theme="dark"]{--bg:#0d0a1f;--panel:#181334;--line:#33297a;--text:#ece9ff;--muted:#a9a3d6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans Thai",system-ui,sans-serif;line-height:1.7;overflow-x:hidden}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{position:relative;padding:72px 0 64px;background:
+  radial-gradient(600px 300px at 80% 0,rgba(139,92,246,.35),transparent 70%),
+  radial-gradient(500px 300px at 0 100%,rgba(59,130,246,.28),transparent 70%)}
+.logo{font-family:"Chakra Petch",system-ui,sans-serif;font-weight:700;font-size:clamp(3rem,13vw,7.5rem);line-height:1;margin:0;letter-spacing:.01em;
+  background:linear-gradient(90deg,var(--violet),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:rise .8s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.logo{animation:none}.pulse{animation:none}}
+.tag{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:16px 0 28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:12px;font-weight:600;font-size:1.05rem;text-decoration:none;color:#fff;
+  font-family:"Noto Sans Thai",system-ui,sans-serif}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.sub{background:var(--hot)}
+.sub:hover{filter:brightness(1.1)}
+.ghost{border:2px solid var(--line);color:var(--text);margin-left:8px}
+.ghost:hover{border-color:var(--violet)}
+.pulse{width:12px;height:12px;border-radius:50%;background:#fff;animation:p 1.6s infinite}
+@keyframes p{0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}100%{box-shadow:0 0 0 12px rgba(255,255,255,0)}}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.ghost{margin-left:0}
+h2{font-family:"Chakra Petch",system-ui,sans-serif;font-size:1.8rem;margin:0 0 8px}
+section{padding:48px 0}
+.lead{color:var(--muted);margin:0 0 28px;max-width:52ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted)}
+.card:nth-child(2){border-radius:28px 6px 28px 6px}
+.feature{display:flex;align-items:center;gap:20px;padding:28px;border-radius:18px;text-decoration:none;color:var(--text);
+  background:linear-gradient(135deg,rgba(139,92,246,.35),rgba(59,130,246,.25));border:1px solid var(--line)}
+.feature:hover{border-color:var(--violet)}
+.feature:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.playbtn{flex:none;width:64px;height:64px;border-radius:50%;background:var(--hot);position:relative}
+.playbtn::after{content:"";position:absolute;left:25px;top:19px;border-left:20px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent}
+.ftext{color:var(--muted)}
+.ftext strong{color:var(--text);font-size:1.15rem}
+.cta{text-align:center;border-top:1px solid var(--line)}
+.cta .actions{justify-content:center}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1 class="logo">JOTIN HUB</h1>
+    <p class="tag">ช่องยูทูปเกมเมอร์ของJOTIN HUB มาดูคลิปและสนุกไปด้วยกัน</p>
+    <div class="actions">
+      <a class="btn sub" href="https://youtube.com/@jotinhub?sub_confirmation=1" target="_blank" rel="noopener"><span class="pulse"></span>กดติดตามช่อง</a>
+      <a class="btn ghost" href="https://youtube.com/@jotinhub" target="_blank" rel="noopener">ไปดูคลิปทั้งหมด</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>มีอะไรในช่อง</h2>
+      <p class="lead">คลิปเกมที่ทำเองทุกคลิป เปิดดูได้ฟรีบนยูทูป</p>
+      <div class="grid">
+        <div class="card"><h3>คลิปเกม</h3><p>เล่นเกมและแชร์เทคนิคที่ลองแล้วได้ผลจริง</p></div>
+        <div class="card"><h3>เล่นสนุกกับเพื่อน</h3><p>ชวนเพื่อนมาเล่นด้วยกัน มีเรื่องฮาให้ดูตลอด</p></div>
+        <div class="card"><h3>ช่องใหม่ เติบโตไปด้วยกัน</h3><p>ทุกการติดตามช่วยให้ช่องได้ทำคลิปใหม่ๆ ต่อไป</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>คลิปแนะนำ</h2>
+      <p class="lead">กดเข้าไปดูบนยูทูป แล้วอย่าลืมกดไลค์และคอมเมนต์ให้ด้วยนะ</p>
+      <a class="feature" href="https://youtu.be/Z5Lf-ODQ4PQ" target="_blank" rel="noopener">
+        <span class="playbtn" aria-hidden="true"></span>
+        <span class="ftext"><strong>ดูคลิปนี้บนยูทูป</strong><br>เปิดในแอปหรือเบราว์เซอร์</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>ช่วยซัพพอร์ตช่องได้ง่ายๆ</h2>
+      <p class="lead">ใช้เวลาไม่ถึงนาที แต่ช่วยช่องได้เยอะมาก</p>
+      <div class="grid">
+        <div class="card"><h3>กดไลค์</h3><p>ถ้าชอบคลิปไหน กดไลค์ให้กำลังใจได้เลย</p></div>
+        <div class="card"><h3>คอมเมนต์</h3><p>บอกว่าอยากให้เล่นเกมอะไรต่อ ทุกความเห็นมีคนอ่าน</p></div>
+        <div class="card"><h3>กดติดตาม</h3><p>กดกระดิ่งเพื่อไม่พลาดคลิปใหม่</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>พร้อมดูคลิปแล้วหรือยัง</h2>
+      <p class="lead" style="margin-inline:auto">เปิดช่อง JOTIN HUB แล้วกดติดตามได้เลย</p>
+      <div class="actions">
+        <a class="btn sub" href="https://youtube.com/@jotinhub?sub_confirmation=1" target="_blank" rel="noopener"><span class="pulse"></span>กดติดตามช่อง</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">JOTIN HUB · youtube.com/@jotinhub</div>
+</footer>
+</body>
+</html>
